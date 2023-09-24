@@ -41,6 +41,7 @@ public class Main {
             System.out.println("Answere " + res);
         }
 
+        System.out.println("Next task");
         int option;
         do {
             int fnum;
