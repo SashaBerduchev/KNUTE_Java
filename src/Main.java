@@ -41,5 +41,20 @@ public class Main {
             System.out.println("Answere " + res);
         }
 
+        int option;
+        do {
+            int fnum;
+            int snum;
+            System.out.println("Уведіть 2 числа окремо");
+            fnum = Integer.parseInt(String.valueOf(System.in.read()));
+            snum = Integer.parseInt(String.valueOf(System.in.read()));
+            int res = fnum * snum;
+            System.out.println(res);
+            System.out.println("Уведіть число(якщо 1 то програма зупинить роботу)");
+            option = Integer.parseInt(String.valueOf(System.in.read()));
+        }while (option != 1);
+
+        System.in.read();
+
     }
 }
