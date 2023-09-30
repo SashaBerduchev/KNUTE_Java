@@ -8,6 +8,14 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         System.out.printf("Hello and welcome!");
 
+        System.out.println("Уведіть довжину масиву");
+        int count = Integer.parseInt(String.valueOf(System.in.read()));
+        ArrayWork arrays = new ArrayWork(count);
+        for (int i = 0; i<arrays.getCount(); i++){
+            System.out.print(arrays.getElement(i) + " ");
+        };
+
+        System.out.println("-----------------------------------------------------");
         // Press Shift+F10 or click the green arrow button in the gutter to run the code.
         for (int i = 1; i <= 5; i++) {
 
@@ -54,7 +62,6 @@ public class Main {
             System.out.println("Уведіть число(якщо 1 то програма зупинить роботу)");
             option = Integer.parseInt(String.valueOf(System.in.read()));
         }while (option != 1);
-
         System.in.read();
 
     }
